@@ -1,0 +1,22 @@
+# ============================================================
+# MONGODB BACKUP CONFIGURATION
+#
+# {DATE} is automatically replaced with YESTERDAY.
+#
+# India:
+#   checked every day
+#
+# US:
+#   backup is expected on Sunday
+#   therefore the script checks it when YESTERDAY was Sunday
+# ============================================================
+
+[INDIA]
+server=inslordevv28.navbackoffice.com
+backup_path=/home/isefolder/isebackups/MongoDB/FullBackups/{DATE}
+backup_frequency=DAILY
+
+[US]
+server=usclordevv01.navconsulting.net
+backup_path=/home/isefolder/isebackups/MongoDB/FullBackups/{DATE}
+backup_frequency=SUNDAY

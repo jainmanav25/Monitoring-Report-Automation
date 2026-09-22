@@ -1,0 +1,92 @@
+# ============================================================
+# URL MONITORING CONFIGURATION
+#
+# Format:
+# [PROJECT_NAME]
+# Service Name=http://or-https-url
+#
+# Lines beginning with # are comments.
+# Blank URL rows from the old Excel are intentionally not added
+# because there is no URL to test.
+# ============================================================
+
+[NAVFAS]
+NAVFASApp-URL-DEFAULT-NAVFundAccountingWeb=http://navfundaccounting/
+NAVFASApp-URL-DEFAULT-SendMessageAPI=http://appinshared02:15001/api/MessageSend/Ping
+NAVFASApp-URL-DEFAULT-FormulaApi=http://appinshared02/formula/application/ping
+NAVFASApp-URL-ENV5-InvestorDataServiceAPI=http://appinshared02/env5/rta/api/InvestorData/ping
+NAVFASApp-URL-ENV5-MasterDataServiceAPI=http://appinshared02/env5/mdm/api/MasterData/ping
+NAVFASApp-URL-ENV5-GenerationServiceAPI=http://appinshared02/env5/generation/api/Generation/ping
+NAVFASApp-URL-ENV5-AccountingPeriodAPI=http://appinshared02/env5/aps/api/AccountingPeriod/ping
+NAVFASApp-URL-ENV1-InvestorDataServiceAPI=http://appinshared02/env1/rta/api/InvestorData/ping
+NAVFASApp-URL-ENV1-MasterDataServiceAPI=http://appinshared02/env1/mdm/api/MasterData/ping
+NAVFASApp-URL-ENV1-GenerationServiceAPI=http://appinshared02/env1/generation/api/Generation/ping
+NAVFASApp-URL-ENV1-AccountingPeriodAPI=http://appinshared02/env1/aps/api/AccountingPeriod/ping
+NAVFASApp-URL-ENV1-DashboardAPI=http://appinshared02/env1/funddashboardapi/api/application/GetFasApplications
+NAVFASApp-URL-DEFAULT-AuthenticationService=http://appinshared02/authentication/userexists?username=vedprakash
+NAVFASApp-URL-KFK-INSLNXPRDV18=http://appinkafkalnx:8080/
+
+[NAVCompliance]
+NAVRTAApp-URL-ComplianceAPI-lin=http://usclorprdv20.navconsulting.net:5011/api/compliancerta/ping
+# NAVRTAApp-URL-WorkflowEngineAPI-Lin has no URL in the source report
+# NAVCOMPLIANCE-URL-Rule Engine Service-Lin has no URL in the source report
+
+[NAVCryptoCurrency]
+Data fetch API=http://appuscryptokubecls1.navconsulting.net/datafetchapi-crypto/NAVFetchCryptoDataAPI/
+Data fetch API Web=http://appuscryptokubecls1.navconsulting.net/datafetchapi-web-crypto/NAVFetchCryptoDataAPI/
+Accounts API=http://appuscryptokubecls1.navconsulting.net/accountsapi-crypto/
+taskstatusapi-balance-crypto=http://appuscryptokubecls1.navconsulting.net/taskstatusapi-balance-crypto/api/TaskStatus/Ping
+taskstatusapi-defi-crypto=http://appuscryptokubecls1.navconsulting.net/taskstatusapi-defi-crypto/api/TaskStatus/Ping
+taskstatusapi-other-crypto=http://appuscryptokubecls1.navconsulting.net/taskstatusapi-other-crypto/api/TaskStatus/Ping
+schdular balance crypto=http://appuscryptokubecls1.navconsulting.net/scheduler-balance-crypto/SchedulerService/Ping
+schdular defi crypto=http://appuscryptokubecls1.navconsulting.net/scheduler-defi-crypto/SchedulerService/Ping
+schdular other crypto=http://appuscryptokubecls1.navconsulting.net/scheduler-other-crypto/SchedulerService/Ping
+consumer balance crypto=http://appuscryptokubecls1.navconsulting.net/consumer-balance-crypto/api/Application/Ping
+Consumer defi crypto=http://appuscryptokubecls1.navconsulting.net/consumer-defi-crypto/api/Application/Ping
+Consumer other crypto=http://appuscryptokubecls1.navconsulting.net/consumer-other-crypto/api/Application/Ping
+DATAFETCH_6001=http://awscryptolnx1.navconsulting.net:6001/NAVFetchCryptoDataAPI/
+TASKSTATUS_BAL=http://awscryptolnx2.navconsulting.net:5001/api/TaskStatus/Ping
+TASKSTATUS_DEFI=http://awscryptolnx2.navconsulting.net:5002/api/TaskStatus/Ping
+SCHEDULER_BAL=http://awscryptolnx2.navconsulting.net:5007/SchedulerService/Ping
+SCHEDULER_DEFI=http://awscryptolnx2.navconsulting.net:5008/SchedulerService/Ping
+CONSUMER_BAL=http://awscryptolnx2.navconsulting.net:5004/api/Application/Ping
+CONSUMER_DEFI=http://awscryptolnx2.navconsulting.net:5005/api/Application/Ping
+DATAFETCH_9005=http://awscryptolnx1.navconsulting.net:9005/NAVFetchCryptoDataAPI/
+DATAFETCH_9006=http://awscryptolnx1.navconsulting.net:9006/NAVFetchCryptoDataAPI/
+ACCOUNTS_API_AWS=http://awscryptolnx1.navconsulting.net:8090/
+ERROR_NOTIFICATION=https://awscryptolnx1.navconsulting.net:9001/MSTeamsAPI/Ping
+
+[NAVRPS]
+NAVRPSApp-URL-USCLORPRDV04-navinteractivedashboardapi=http://appusrpslnx.navconsulting.net:8003/swagger/index.html
+
+[NAVRTA]
+NAVRTAApp-URL-InvestorAPI-Lin=http://appusnavrta.navconsulting.net:5005/api/investor/Ping
+NAVRTAApp-URL-FundAPI-Lin=http://appusnavrta.navconsulting.net:5004/fund/Ping
+NAVRTAApp-URL-SystemAPI-Lin=http://appusnavrta.navconsulting.net:5003/api/system/Ping
+NAVRTAApp-URL-ActivityAPI-Lin=http://appusnavrta.navconsulting.net:5001/api/activity/Ping
+NAVRTAApp-URL-ComplianceAPI-Lin=http://appusnavrta.navconsulting.net/navrtacomplianceapi/api/ComplianceRTA/Ping
+
+[Graylog]
+NAVGraylogApp-LIN-usclorprdv24=http://appusgraylog.navconsulting.net:9000/
+NAVGraylogApp-LIN-INSLORPRDV04=http://appingraylog.navbackoffice.com:9000/
+
+[RabbitMQ]
+RabbitMQ-RMQ-INSAPPPRDV07=http://appinrabbitmq:15672/#/
+RabbitMQ-LIN-USCLNXPRDV16=http://appusrabbitmq:15672/#/
+RabbitMQ-LIN-USCLNXPRDV23=http://appusrabbitmq2:15672/#/
+
+[NAVMDM]
+NAVMDM Web=https://navmdm/
+# "Container=Running" from the old report is not a URL and is not included.
+
+[NAVTPS]
+NAVTPSDB-URL-applnxinnavtps=http://applnxinnavtps:9000/login
+NAVTPSDB-URL-applnxusnavtps=http://applnxusnavtps.navconsulting.net:9000/login
+
+[NAVDataAnalytics]
+CashCodeMain-INSLNXPRDV17=http://appinda:5015
+CashCodeMain2-INSLNXPRDV17=http://appinda:5025
+CashCodeMain-INSLORPRDV40=http://INSLORPRDV40:5015
+CashCodeMain2-INSLORPRDV40=http://INSLORPRDV40:5025
+CashCodeMain-USCLORPRDV40.navconsulting.net=http://USCLORPRDV40.navconsulting.net:5015
+CashCodeMain2-USCLORPRDV40.navconsulting.net=http://USCLORPRDV40.navconsulting.net:5025

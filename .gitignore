@@ -1,0 +1,4 @@
+credentials.txt
+monitoring_output/
+__pycache__/
+*.pyc

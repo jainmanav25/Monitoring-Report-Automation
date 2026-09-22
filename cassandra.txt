@@ -1,0 +1,7 @@
+# ============================================================
+# CASSANDRA CONFIGURATION
+# ============================================================
+
+[Cassandra-DEV]
+server=INSLORUATV01.navbackoffice.com
+command=nodetool status

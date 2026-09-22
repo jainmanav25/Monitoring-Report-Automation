@@ -1,0 +1,8 @@
+# ============================================================
+# RABBITMQ CONFIGURATION
+# ============================================================
+
+[RabbitMQ-DEV]
+server=inrabbitmqdev.navbackoffice.com
+path=/var/lib/rabbitmq/mnesia/rabbit@inslordevv70/msg_stores
+use_sudo=true
